@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Webpage (SimpleGrid Version)</title>
+    <link rel="stylesheet" href="materialize.css"> 
+    <style>
+        .image-text-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .image-text-container img {
+            max-width: 100%;
+            margin-right: 20px; 
+        }
+    </style>
+</head>
+<body style="background-color: #dce775;">
+    <div class="container">
+        <section class="intro">
+            <h2>Crestian Katlego Makofane</h2>
+            <img src="./KAT TB Mountain Background.png" style="width: 25%;">
+            <div class="image-text-container">
+            
+        </div>
+        </section>
+
+        <section class="which-city">
+            <h2>Which City?</h2>
+            <div class="image-text-container">
+                <img src="./Cape Town City.jpg" alt="City Photo" style="width: 30%;">
+            <p>I would like to visit Cape Town mainly because of its Natural Beauty, Rich History, Outdoor Activities, Wine and Food.</p>
+            
+        </div>
+        </section>
+
+        <section class="foreign-language">
+            <h2>A Foreign Language</h2>
+            <p>I would like to learn Mandarin Chinese because China's economy is the best globally, and opportunities in the country are vast for professional growth.</p>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>English</th>
+                        <th>Mandarin Chinese</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hello</td>
+                        <td>Nǐ hǎo</td>
+                    </tr>
+                    <tr>
+                        <td>Thank you</td>
+                        <td>Xie xie</td>
+                    </tr>
+                    <tr>
+                        <td>Goodbye</td>
+                        <td>Zàijiàn</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    <section class="historic-places">
+        <h2>Historic Places in Johannesburg</h2>
+
+        <div class=" Places">
+            <div class="row">
+                <div class="col s12 m8 l4">
+            <h3>Marshalltown</h3>
+            <div class="row">
+            <div class="image-text-container">               
+            <ul class="col s6">
+                <li>Historical Financial Hub</li>
+                <li>Cultural Diversity</li>
+                <li>Architectural Diversity</li>
+            </ul>
+            <img src="https://liveeasy.co.za/wp-content/uploads/2020/02/2-Marshalltown.jpg" alt="Place 1 Photo" style="width: 50%;" class="col s6">
+            </div>
+        </div>
+        </div>
+
+        <div class="col s12 m8 l4">
+            
+            <h3>Braamfontein</h3>
+            <div class="row">
+            <div class="image-text-container">               
+            <ul class="col s6">
+                <li>Cultural Hub</li>
+                <li>Educational Center</li>
+                <li>Urban Regeneration</li>
+            </ul>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP0QW4Iz88aauLz23MNpfFQRRBBIqvZEsFjMiTVx2ZxA&s" alt="Place 2 Photo" style="width: 50%;" class="col s6">
+        </div>
+        </div>
+        </div>
+
+        <div class="col s12 m8 l4">
+            <h3>Auckland Park</h3>
+            <div class="row">
+            <div class="image-text-container">
+            <ul class="col s6">
+                <li>Media Hub</li>
+                <li>Educational Institutions</li>
+                <li>Natural Attractions</li>
+            </ul>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9ZJbtZ_8suJbmoxWkfrzDyj_RlCf8_fRdVQ&s" alt="Place 3 Photo" style="width: 50%;" class="col s6">
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+    </section>
+
+    <section class="favourite-subjects">
+        <h2>Favourite Subjects</h2>
+        <p>{{educationDescription}}</p>
+        <div class="row">
+            {{#each favouriteSubjects}}
+            <div class="col s12 m8 l4">
+                <div class="image-text-container">
+                    <div class="row">
+                        <h3 class="col s12" style="font-size: medium;">{{name}}</h3>
+                    </div>
+                    <div class="row">
+                        <img src="{{image}}" alt="{{name}} Image" style="width: 250px;" class="col s12">
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </section>
+    </div>
+</body>
+</html>

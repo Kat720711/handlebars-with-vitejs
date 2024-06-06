@@ -1,0 +1,41 @@
+{
+    "user" : {
+        "fullName": "Crestian Katlego Makofane",
+        "photo" : "./KAT TB Mountain Background.png"
+    },
+    "city" : {
+        "name" : "Cape Town",
+        "image" : "./Cape Town City.jpg",
+        "description" : "I would like to visit Cape Town mainly because of its Natural Beauty, Rich History, Outdoor Activities, Wine and Food."
+    },
+    "foreignLanguage" : {
+        "language" : "Mandarin Chinese",
+        "phrases" : [{
+            "englishPhrase" : "Hello",
+            "foreignLanguage" : "Nǐ hǎo"
+        },
+        {
+            "englishPhrase" : "Thank you",
+            "foreignLanguage" : "Xie xie"
+
+        },
+        {
+            "englishPhrase" : "Goodbye",
+            "foreignLanguage" : "Zàijiàn"
+        }]
+    },
+    "favouriteSubjects" : [
+        {
+            "name" : "Full Stack Web Development For 4IR",
+            "image" : "./full-stack-development.png"
+        },
+        {
+            "name" : "Engineering Business Systems For 4IR",
+            "image" : "./Engineering Business Systems for 4IR.jpg"
+        },
+        {
+            "name" : "4IR Technologies BootCamp",
+            "image" : "./4IR Technologies BootCamp."
+        }
+    ]
+}
